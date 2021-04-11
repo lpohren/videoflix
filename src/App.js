@@ -8,7 +8,7 @@ import {
 import { Box, makeStyles } from "@material-ui/core";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
-import Detail from "./components/detail";
+import Player from "./components/player";
 import Header from "./components/header";
 
 function App() {
@@ -59,7 +59,7 @@ function App() {
         <Box className={classes.content}>
           <Switch>
             <Route path="/movie">
-              <Detail />
+              <Player />
             </Route>
             <Route exact path="/">
               <Content query={search} rating={rating} />

@@ -40,7 +40,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Detail = () => {
+const Player = () => {
   const classes = useStyles();
   const [movieDetails, setMovieDetails] = useState(null);
   const location = useLocation();
@@ -97,4 +97,4 @@ const BackButton = ({ className }) => {
   );
 };
 
-export default Detail;
+export default Player;
